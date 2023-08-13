@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+header {
+    background-color: #bab6e7;
+    padding: 1rem;
+    color: white;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+main {
+    padding: 4rem;
+    text-align: justify;
+}

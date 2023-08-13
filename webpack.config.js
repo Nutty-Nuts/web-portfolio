@@ -4,6 +4,7 @@ const { debugPort } = require("process")
 
 module.exports = {
     mode: "development",
+    watch: true,
     entry: {
         bundle: path.resolve(__dirname, "src/main.js"),
     },
@@ -26,11 +27,11 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /.\scss$/,
+                test: /\.scss$/,
                 use: ["style-loader", "css-loader", "sass-loader"],
             },
             {
-                test: /.\.js$/,
+                test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
@@ -40,7 +41,7 @@ module.exports = {
                 },
             },
             {
-                test: /.\(png|svg|jpg|jpeg|gif)$/i,
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: "asset/resource",
             },
         ],
